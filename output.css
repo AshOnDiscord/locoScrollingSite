@@ -472,6 +472,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   visibility: visible;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .relative {
   position: relative;
 }
@@ -596,6 +600,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   overflow: hidden;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -609,9 +617,29 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
 
+.bg-indigo-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(49 46 129 / var(--tw-bg-opacity));
+}
+
+.bg-indigo-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(99 102 241 / var(--tw-bg-opacity));
+}
+
 .bg-gray-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+}
+
+.bg-indigo-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(67 56 202 / var(--tw-bg-opacity));
+}
+
+.bg-indigo-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(129 140 248 / var(--tw-bg-opacity));
 }
 
 .p-5 {
@@ -720,4 +748,29 @@ body>section {
 
 .ashwhois1Anim {
   bottom: 0;
+}
+
+#lower {
+  width: 0.1rem;
+  height: 100%;
+  left: 30rem;
+  margin-top: 50vh;
+}
+
+.upper {
+  width: 0.1rem;
+  height: 50vh;
+  left: 30rem;
+  top: 50vh;
+}
+
+.dot {
+  width: 1rem;
+  height: 1rem;
+  left: 29.5rem;
+  top: calc(50vh - 0.5rem);
+}
+
+#lowerWrapper {
+  height: calc(100% - 50vh)
 }

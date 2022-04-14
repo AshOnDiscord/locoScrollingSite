@@ -33,3 +33,29 @@ body>section {
 .ashwhois1Anim {
   bottom: 0;
 }
+
+#lower {
+  width: 0.1rem;
+  height: 100%;
+  left: 30rem;
+  margin-top: 50vh;
+}
+
+
+.upper {
+  width: 0.1rem;
+  height: 50vh;
+  left: 30rem;
+  top: 50vh;
+}
+
+.dot {
+  width: 1rem;
+  height: 1rem;
+  left: 29.5rem;
+  top: calc(50vh - 0.5rem);
+}
+
+#lowerWrapper {
+  height: calc(100% - 50vh)
+}
