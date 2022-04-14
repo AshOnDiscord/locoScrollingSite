@@ -3,75 +3,26 @@
 @tailwind utilities;
 
 body>section {
-  display: grid;
   grid-template-columns: 30rem auto;
 }
 
-body>section>main {
-  grid-column: 2 / 3;
-}
-
-#ashWhoIs2 {
-  max-width: 35rem;
-}
-
 .card {
-  border-radius: 0.5rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.2s ease-in-out;
-  width: 10rem;
-  height: 12.5rem;
   background-color: white;
-  position: relative;
   transition: all 1s;
-  margin-top: 1rem;
-}
-
-.cardWrapper {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  overflow: hidden;
-}
-
-.card1{
-  left: -11rem;
-  transition: all 0.5s;
-}
-
-.card2{
-  left: -22rem;
-  transition: all 0.5s 0.5s;
-}
-
-.card3{
-  left: -33rem;
-  transition: all 0.5s 1s;
 }
 
 .cardView1{
-  left: 0;
+  right: 0;
   transition: all 1s 2s;
 }
 
 .cardView2{
-  left: 0;
+  right: 0;
   transition: all 1s 1s;
 }
 
 .cardView3{
-  left: 0;
-  transition: all 1s;
-}
-
-.ashwhois2Wrapper {
-  overflow:hidden;
-  height: 9rem;
-}
-
-.ashWhoIs2 {
-  position: relative;
-  top: 100%;
+  right: 0;
   transition: all 1s;
 }
 
@@ -79,17 +30,6 @@ body>section>main {
   top: 0;
 }
 
-.ashwhois1Wrapper {
-  height: 4rem;
-  overflow: hidden;
-}
-
-.ashWhoIs1 {
-  position: relative;
-  top: -100%;
-  transition: all 1s;
-}
-
 .ashwhois1Anim {
-  top: 0;
+  bottom: 0;
 }
