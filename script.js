@@ -6,3 +6,16 @@ const scroll = new LocomotiveScroll({
 });
 
 console.log("test");
+
+
+document.getElementById("card1").onclick = function () {
+  location.href = "https://fuckle.ericzheng28.repl.co/";
+};
+
+document.getElementById("card2").onclick = function () {
+  location.href = "https://fuckle.ericzheng28.repl.co/";
+};
+
+document.getElementById("card3").onclick = function () {
+  location.href = "https://fuckle.ericzheng28.repl.co/";
+};
