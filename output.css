@@ -718,12 +718,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 1000ms;
 }
 
-.duration-\[2000ms\] {
-  transition-duration: 2000ms;
-}
-
 .duration-500 {
   transition-duration: 500ms;
+}
+
+.duration-\[2000ms\] {
+  transition-duration: 2000ms;
 }
 
 body>section {
@@ -794,9 +794,6 @@ body>section {
 
 .card {
   overflow: hidden;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   cursor: pointer;
 }
 
@@ -828,13 +825,15 @@ body>section {
 }
 
 .card>h1 {
-  position: relative;
-  top: -7rem;
+  position: absolute;
+  top: calc(50% - 1.5rem);
   text-align: center;
   color: transparent;
   transition: all 0.5s;
   font-weight: bold;
   font-size: 2rem;
+  display: block;
+  width: 100%;
 }
 
 .card:hover>div {
@@ -912,17 +911,12 @@ nav ul li a.active:hover {
   cursor: pointer;
 }
 
-.hover\:text-indigo-500:hover {
-  --tw-text-opacity: 1;
-  color: rgb(99 102 241 / var(--tw-text-opacity));
-}
-
-.hover\:text-indigo-800:hover {
-  --tw-text-opacity: 1;
-  color: rgb(55 48 163 / var(--tw-text-opacity));
-}
-
 .hover\:text-indigo-700:hover {
   --tw-text-opacity: 1;
   color: rgb(67 56 202 / var(--tw-text-opacity));
+}
+
+.hover\:text-indigo-500:hover {
+  --tw-text-opacity: 1;
+  color: rgb(99 102 241 / var(--tw-text-opacity));
 }

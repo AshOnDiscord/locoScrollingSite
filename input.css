@@ -71,9 +71,6 @@ body>section {
 
 .card {
   overflow: hidden;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   cursor: pointer;
 }
 
@@ -105,13 +102,15 @@ body>section {
 }
 
 .card>h1 {
-  position: relative;
-  top: -7rem;
+  position: absolute;
+  top: calc(50% - 1.5rem);
   text-align: center;
   color: transparent;
   transition: all 0.5s;
   font-weight: bold;
   font-size: 2rem;
+  display: block;
+  width: 100%;
 }
 
 .card:hover>div {
