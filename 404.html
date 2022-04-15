@@ -4,9 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>404</title>
+  <link href="output.css" rel="stylesheet">
+  <link href="loco-scroll.css" rel="stylesheet">
 </head>
-<body>
-  <h1>404</h1>
-  <p>Page not found</p>
+<body class="flex flex-col justify-center min-h-screen items-center" data-scroll-container>
+  <h1 class="text-7xl font-semibold font-mono text-blue-500">404</h1><p class="font-mono">Something's Wrong</p>
+  <p class="font-mono">Page not found or in progress</p>
+  <button id="returnToHome" class="text-sm border-2 border-blue-500 bg-grey-100 transition-all duration-200 text-blue-500 p-2 m-1 rounded hover:bg-blue-500 hover:text-gray-100">Return to home</button>
+  <script type="module" src="404.js"></script>
 </body>
 </html>

@@ -131,6 +131,7 @@ body>section {
   position: fixed;
   top: 3.5rem;
   z-index: 100;
+  pointer-events: none;
 }
 
 #lowerOverlay {
@@ -141,6 +142,7 @@ body>section {
   position: fixed;
   bottom: 0;
   z-index: 100;
+  pointer-events: none;
 }
 
 nav {
@@ -182,4 +184,31 @@ nav h1 {
 nav ul li a.active:hover {
   text-decoration: underline #4338ca solid 3px;
   cursor: pointer;
+}
+
+.rotateInBottom {
+  display: block;
+  opacity: 0;
+  transform: translateY(100%) rotateX(-80deg);
+  transform-origin: center top;
+  transform-style: preserve-3d;
+  transition: opacity 0s cubic-bezier(.215,.61,.355,1),transform 0s cubic-bezier(.215,.61,.355,1);
+}
+  
+.rotateInBottomAnim {
+  opacity: 1;
+  transform: none;
+  transition-duration: .8s;
+  transition-delay: .1s;
+}
+
+.loadWrapper {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 2000;
+  background-color: rgba(17,24,39,1);
+  transition: all 1s;
+  opacity: 1;
+  pointer-events: none;
 }
