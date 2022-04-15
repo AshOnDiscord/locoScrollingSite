@@ -7,7 +7,17 @@
   <link href="loco-scroll.css" rel="stylesheet">
 </head>
 <body class="h-screen m-0 box-border">
-  <section class="grid bg-gray-800" data-scroll-container>
+  <nav>
+    <h1 class="text-gray-200">Ash</h1>
+    <ul>
+      <li><a class="text-gray-400 hover:text-indigo-700 active" href="#">Home</a></li>
+      <li><a class="text-gray-200 hover:text-indigo-500" href="./about.html">About</a></li>
+      <li><a class="text-gray-200 hover:text-indigo-500" href="./contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <section class="grid bg-gray-900" data-scroll-container>
+    <div id="upperOverlay"></div>
+    <div id="lowerOverlay"></div>
     <div class="aside">
       <div id="lowerWrapper" data-scroll-section>
         <div class="bg-indigo-900 relative" id="lower">
@@ -20,13 +30,13 @@
   </div>
     </div>
     <main class="bg-gray-900 col-start-2 col-end-3">
-      <section class="h-screen box-border p-5 flex justify-center flex-col" id="ashHelpWrapper" data-scroll-section>
+      <section class="min-h-screen box-border p-5 flex justify-center flex-col" id="ashHelpWrapper" data-scroll-section>
         <h1 class="text-gray-100 text-6xl font-semibold font-mono" id="ashHelp">ash<span class="text-indigo-500">.intro()</span></h1>
         <h2 class="text-xl font-mono text-indigo-500" id="ashHelp2">ASH#9555</h2>
         <h2 class="text-gray-400 text-xl font-mono" id="ashHelp3">Professional dumbass, frontend<br>developer,
            and designer.</h2>
       </section>
-      <section class="h-screen box-border p-5 flex justify-center flex-col" id="ashWhoIsWrapper" data-scroll-section>
+      <section class="min-h-screen box-border p-5 flex justify-center flex-col" id="ashWhoIsWrapper" data-scroll-section>
         <div class="overflow-hidden">
           <h1 data-scroll-repeat data-scroll data-scroll-class="ashwhois1Anim" class="transition-all duration-1000 text-gray-100 text-6xl font-semibold bottom-full font-mono relative">ash<span class="text-indigo-500">.whois()</span></h1>
         </div>
@@ -34,7 +44,7 @@
           <h2 data-scroll-repeat data-scroll data-scroll-class="ashwhois2Anim" class="transition-all duration-1000 text-gray-400 text-xl font-mono top-full max-w-lg relative">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fermentum odio eu feugiat pretium nibh ipsum consequat. Neque egestas congue quisque egestas diam in arcu.</h2>
         </div>
       </section>
-      <section class="h-screen box-border p-5 flex justify-center flex-col" id="ashWorkWrapper" data-scroll-section>
+      <section class="min-h-screen box-border p-5 flex justify-center flex-col" id="ashWorkWrapper" data-scroll-section>
         <div class="overflow-hidden">
           <h1 data-scroll-repeat data-scroll data-scroll-class="ashWorksView" class="relative text-gray-100 text-6xl font-semibold font-mono right-full transition-all duration-[2000ms]">ash<span class="text-indigo-500">.works()</span></h1>
         </div>
