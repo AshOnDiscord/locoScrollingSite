@@ -783,6 +783,14 @@ body>section {
   height: calc(100% - 50vh)
 }
 
+#whoisWrap {
+  height: 3.75rem;
+}
+
+#whoisWrap2 {
+  height: 10.5rem;
+}
+
 .ashWorks {
   right: 100%;
   transition: all 1s;
