@@ -180,6 +180,6 @@ nav h1 {
 }
 
 nav ul li a.active:hover {
-  text-decoration: underline #6366f1 solid 3px;
+  text-decoration: underline #4338ca solid 3px;
   cursor: pointer;
 }
